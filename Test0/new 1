@@ -1,0 +1,7 @@
+// 方式一
+					_variant_t var1;
+					var1.ChangeType(VT_INT);
+					var1.intVal = updateTime;
+					m_pRecordset->Fields->GetItem("RemainTime")->Value = var1;
+					// 必须在移动游标前执行更新!!
+					m_pRecordset->Update();

@@ -1,0 +1,28 @@
+UID: 8c742180
+Time: 2016/01/07 11:14:54
+Status: Exit successfully
+Content: User exit, online time: 0 h 0 m 2 s
+Remain time: 1 h 0 m 59 s
+
+
+UID: 8c742180
+Time: 2016/01/07 11:14:51
+Status: Sign in successful
+Content: User sign in
+Remain time: 1 h 1 m 1 s
+
+
+UID: 8c742180
+Time: 2016/01/07 11:14:42
+Status: Exit successfully
+Content: User exit, online time: 0 h 0 m 3 s
+Remain time: 1 h 59 m 57 s
+
+
+UID: 8c742180
+Time: 2016/01/07 11:14:39
+Status: Sign in successful
+Content: User sign in
+Remain time: 2 h 0 m 0 s
+
+

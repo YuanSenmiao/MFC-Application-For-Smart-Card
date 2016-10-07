@@ -1,0 +1,389 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Test0.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Test0.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Test0"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Test0 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2015",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_TEST0_DIALOG DIALOGEX 0, 0, 531, 296
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "读写器上位机软件demo"
+FONT 9, "微软雅黑", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,7,7,517,282
+END
+
+IDD_DEBUGGER DIALOGEX 0, 0, 457, 247
+STYLE WS_CHILD
+FONT 10, "微软雅黑", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Device",IDC_STATIC,15,10,200,37
+    LTEXT           "Status :",IDC_STATIC,28,28,24,8
+    EDITTEXT        IDC_OPEN_STATUS,59,24,85,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Open Device",IDC_BTN_OPEN_DEVICE,152,24,49,12,0,
+                    WS_EX_DLGMODALFRAME
+    GROUPBOX        "Card Information",IDC_STATIC,15,61,200,74
+    LTEXT           "Version :",IDC_STATIC,29,81,28,8
+    LTEXT           "UID :",IDC_STATIC,29,98,17,8
+    LTEXT           "Status :",IDC_STATIC,29,114,24,8
+    EDITTEXT        IDC_VERSION,59,77,85,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_UID,59,94,85,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INFO_STATUS,59,110,141,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Check",IDC_BTN_CHECK_VERSION,152,77,49,12,0,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "Access",IDC_BTN_ACCESS_UID,152,94,49,12,0,
+                    WS_EX_DLGMODALFRAME
+    GROUPBOX        "LED Settings",IDC_STATIC,15,148,200,72
+    LTEXT           "Info :",IDC_STATIC,30,165,20,8
+    LTEXT           "Decimal Digits :",IDC_STATIC,29,181,52,8
+    LTEXT           "Status :",IDC_STATIC,29,197,24,8
+    EDITTEXT        IDC_LED_INFO,60,164,85,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DEC_DIG,90,180,55,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LED_STATUS,60,197,140,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set",IDC_BTN_SET_LED,152,171,49,12,0,
+                    WS_EX_DLGMODALFRAME
+    GROUPBOX        "Operations",IDC_STATIC,230,10,201,210
+    GROUPBOX        "Key Settings",IDC_STATIC,241,26,175,54
+    CONTROL         "Tyep-A Key",IDC_TYPE_A,"Button",BS_AUTORADIOBUTTON,252,
+                    40,51,10
+    CONTROL         "Tyep-B Key",IDC_TYPE_B,"Button",BS_AUTORADIOBUTTON,344,
+                    40,51,10
+    LTEXT           "Key :",IDC_STATIC,249,60,18,8
+    EDITTEXT        IDC_KEY,271,56,85,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Default Key",IDC_BTN_DEF_KEY,360,56,49,12,0,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "Sector Number:",IDC_STATIC,242,90,50,8
+    COMBOBOX        IDC_SECTOR,298,86,31,61,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Block Number:",IDC_STATIC,336,90,47,8
+    COMBOBOX        IDC_BLOCK,385,86,31,46,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Block 0 :",IDC_STATIC,242,108,27,8
+    LTEXT           "Block 1 :",IDC_STATIC,242,124,27,8
+    LTEXT           "Block 2 :",IDC_STATIC,242,141,27,8
+    LTEXT           "Block 3 :",IDC_STATIC,242,156,27,8
+    EDITTEXT        IDC_BLOCK0,275,104,140,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BLOCK1,275,120,140,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BLOCK2,275,137,140,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BLOCK3_A,275,152,52,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_BLOCK3_B,328,152,34,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_BLOCK3_C,363,152,52,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_RW_STATUS,275,171,140,12,ES_AUTOHSCROLL
+    LTEXT           "Status :",IDC_STATIC,242,175,24,8
+    PUSHBUTTON      "Read Sectors",IDC_BTN_READ_SECTOR,242,196,52,12,0,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "Read Blocks",IDC_BTN_READ_BLOCK,303,196,52,12,0,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "Write Blocks",IDC_BTN_WRITE_BLOCK,364,196,52,12,0,
+                    WS_EX_DLGMODALFRAME
+END
+
+IDD_APPDEV DIALOGEX 0, 0, 447, 252
+STYLE WS_CHILD
+FONT 10, "@微软雅黑"
+BEGIN
+    GROUPBOX        "E-Wallet",IDC_STATIC,16,10,199,104
+    LTEXT           "Balance :",IDC_STATIC,26,25,28,8
+    EDITTEXT        IDC_BALANCE,60,21,140,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Initialize",IDC_INIT_BALANCE,50,39,55,14,0,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "Check Balance",IDC_CHECK_BALANCE,126,39,55,14,0,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "Deposit Amount :",IDC_STATIC,26,64,54,8
+    EDITTEXT        IDC_DEPOSIT_SUM,90,60,70,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Deposit",IDC_DEPOSIT,165,58,35,14,0,WS_EX_DLGMODALFRAME
+    LTEXT           "Consume Amount :",IDC_STATIC,26,80,61,8
+    EDITTEXT        IDC_CONSUME_SUM1,90,76,70,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Consume",IDC_CONSUME,165,74,35,14,0,WS_EX_DLGMODALFRAME
+    LTEXT           "Status :",IDC_STATIC,26,96,24,8
+    EDITTEXT        IDC_BALANCE_STATUS,60,92,140,13,ES_AUTOHSCROLL | NOT 
+                    WS_TABSTOP
+    GROUPBOX        "Network Monitor",IDC_NETWORK_MONITOR,16,120,199,115
+    PUSHBUTTON      "Connect",IDC_BUTTON_NETWORK_REGISTER,29,139,50,12,0,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "Start",IDC_BUTTON_NETWORK_START,92,139,50,12,0,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "Exit",IDC_BUTTON_NETWORK_EXIT,154,139,50,12,0,
+                    WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT_HOUR,57,161,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MINUTE,111,161,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SECOND,165,161,21,12,ES_AUTOHSCROLL
+    LTEXT           "h",IDC_STATIC,90,164,8,9
+    LTEXT           "m",IDC_STATIC,143,164,8,9
+    LTEXT           "s",IDC_STATIC,198,164,8,9
+    LTEXT           "Remain: ",IDC_STATIC,25,164,27,9
+    PUSHBUTTON      "Set Time",IDC_BUTTON_TIME_INIT,29,180,50,14,0,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "Default Time",IDC_BUTTON_TIME_DEFAULT,92,180,50,14,0,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "Check Time",IDC_BUTTON_TIME_CHECK,154,180,50,14,0,
+                    WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT_STATUS_ONLINE,61,208,143,14
+    LTEXT           "Status: ",IDC_STATIC,25,211,27,9
+    GROUPBOX        "History",IDC_STATIC,234,14,200,220
+    EDITTEXT        IDC_EDIT_HISTORY,239,28,188,180,ES_MULTILINE | 
+                    WS_VSCROLL
+    PUSHBUTTON      "Clear",IDC_BUTTON_HISTORY_CLEAR,261,213,50,14,0,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "Load",IDC_BUTTON_HISTORY_LOAD,334,213,50,14,0,
+                    WS_EX_DLGMODALFRAME
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Test0 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Test0\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Test0.EXE\0"
+            VALUE "ProductName", "Test0 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TEST0_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 524
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 289
+    END
+
+    IDD_DEBUGGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 451
+        VERTGUIDE, 7
+        VERTGUIDE, 434
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 241
+        HORZGUIDE, 7
+        HORZGUIDE, 211
+    END
+
+    IDD_APPDEV, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 440
+        VERTGUIDE, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 245
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DEBUGGER DLGINIT
+BEGIN
+    IDC_SECTOR, 0x403, 2, 0
+0x0031, 
+    IDC_SECTOR, 0x403, 2, 0
+0x0032, 
+    IDC_SECTOR, 0x403, 2, 0
+0x0033, 
+    IDC_SECTOR, 0x403, 2, 0
+0x0034, 
+    IDC_SECTOR, 0x403, 2, 0
+0x0035, 
+    IDC_SECTOR, 0x403, 2, 0
+0x0036, 
+    IDC_SECTOR, 0x403, 2, 0
+0x0037, 
+    IDC_SECTOR, 0x403, 2, 0
+0x0038, 
+    IDC_SECTOR, 0x403, 2, 0
+0x0039, 
+    IDC_SECTOR, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_SECTOR, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_SECTOR, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_SECTOR, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_SECTOR, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_SECTOR, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_BLOCK, 0x403, 2, 0
+0x0030, 
+    IDC_BLOCK, 0x403, 2, 0
+0x0031, 
+    IDC_BLOCK, 0x403, 2, 0
+0x0032, 
+    IDC_BLOCK, 0x403, 2, 0
+0x0033, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Test0(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Test0.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
